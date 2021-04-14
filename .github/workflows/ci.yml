@@ -12,4 +12,4 @@ jobs:
         id: split
         uses: tanaphonble/tag-splitter-action@v0.0.4
       - name: "set env"
-        run: echo "Name=${{steps.tag.outputs.split.name}} Version=${{steps.tag.outputs.split.name}}"
+        run: echo "Name=${{steps.tag.outputs.name}} Version=${{steps.tag.outputs.version}}"
